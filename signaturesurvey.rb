@@ -45,6 +45,7 @@ def signature(filename)
   "#{filename.basename} (#{count}) #{interesting_chars}"
 end
 
+
 files = get_all_files(ARGV[0])
 files.each do |file|
   unless should_skip(file.basename.to_s)
